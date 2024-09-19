@@ -47,7 +47,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   line-height: 1.5rem;
-  padding: 8rem;
+  padding: 6rem;
   gap: 3rem;
 }
 
@@ -147,15 +147,15 @@ align-items: center;
 
 .whyus h3 {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 300;
   margin-top: 1.3rem;
   margin-bottom: 1.3rem;
 }
 
 .whyus p {
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 .whyus hr {
@@ -223,19 +223,20 @@ align-items: center;
 .testimonials {
   display: flex;
   
-  gap: 4rem;
+  gap: 3rem;
  
 
 }
 
 .testimonial-card {
-  width: 40rem;
+  width: 50rem;
   background-color: rgb(205, 205, 205);
   border-radius: 1rem;
  padding: 0 2.5rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 10px 10px #968981;
+  flex-wrap: no-wrap;
+  box-shadow: 7px 7px 10px #968981;
  
 }
 
@@ -247,14 +248,14 @@ align-items: center;
 } */
 
 .testimonial-card p {
-  line-height: 1.7rem;
+  line-height: 1.5rem;
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .reviewer-name {
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
