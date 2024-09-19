@@ -5,7 +5,6 @@ export default function TestimonialCard(props) {
     return (
         <div className="testimonial-card">
             <div className="stars"><IoMdStar style = {starStyle}/><IoMdStar style = {starStyle}/><IoMdStar style = {starStyle}/><IoMdStar style = {starStyle}/><IoMdStar style = {starStyle}/></div>
-            <h2>{props.testimonial.title}</h2>
             <p>{props.testimonial.message}</p>
             <p className="reviewer-name">- {props.testimonial.name}</p>
         </div>
