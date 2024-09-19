@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   min-height: 100vh;
 }
@@ -16,9 +17,9 @@ body {
 h1 {
   font-size: 8rem;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.6rem;
-  color: white;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -34,9 +35,9 @@ h1 {
   justify-content: space-between;
   background-image: url(../assets/images/herobackground.jpg);
   background-repeat: no-repeat;
-  background-position: left 75%;
   background-size: 70%;
  flex-wrap: no-wrap;
+ overflow: hidden;
 }
 
 .hero-container-text {
@@ -47,33 +48,38 @@ h1 {
   align-items: center;
   line-height: 1.5rem;
   padding: 8rem;
+  gap: 3rem;
 }
 
 
 
 .img-container {
+height: 80vh;
+width: 50%;
 
- height: 100%;
 }
 
 .hero-container img {
-height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .hero-container-text-body h2 {
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
+  line-height: 2.5rem;
 }
 
 .hero-container-text-body p {
   margin-top: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero-btn {
-  margin-top: 2.2rem;
+  margin-top: 0.2rem;
   padding: 1rem;
   border-radius: 0.5rem;
   border: none;
@@ -87,6 +93,164 @@ height: 100%;
   background-color: white;
 }
 
-h2 {
+/* navbar */
 
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+ background-color: rgb(248, 248, 248);
+ justify-content: space-between;
+ padding: 1.5rem 3rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* why us section */
+
+.sub-heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 3rem;
+
+}
+
+.whyus img {
+ width: 40%;
+ height: auto;
+}
+
+.whyus {
+  display: flex;
+gap: 8rem;
+align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+ margin: auto;
+
+}
+
+.whyus-text {
+ 
+  width: 40%;
+}
+
+.whyus h3 {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.whyus p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.whyus hr {
+  border-top: 2px solid #966447;
+  margin-bottom: 1rem;
+}
+
+/* BOOK NOW SECTION */
+
+.booknow {
+  background-image: url("../assets/images/booknow-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.booknow h2 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+
+.booknow button {
+  margin-top: 0.2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: white;
+}
+
+.booknow button:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
+
+.testimonials {
+  display: flex;
+  padding: 5rem;
+  gap: 4rem;
+  background-color: #ececec;
+
+}
+
+.testimonial-card {
+  background-color: rgb(205, 205, 205);
+  border-radius: 1rem;
+  padding: 2rem 2rem 0.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+}
+
+.testimonial-card h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.testimonial-card p {
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reviewer-name {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.stars {
+  text-align: center;
+  border: 1px solid #968981;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(255, 255, 255);;
 }
