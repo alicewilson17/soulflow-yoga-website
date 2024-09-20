@@ -1,19 +1,21 @@
+import { Link } from "react-router-dom"
+
 export default function NavBar() {
     return (
         <nav className="navbar">
             <div>
-                <h2 className="nav-title">soulflow yoga.</h2>
+                <Link to={"/"}  className="nav-title"><h2>soulflow yoga.</h2></Link>
             </div>
             <div className="navbar-items">
                 <ul>
                     <li>
-                        timetable
+                        <Link to = {"/classes"} className="navbar-link">classes</Link>
                     </li>
                     <li>
-                        pricing
+                    <Link to = {"/pricing"} className="navbar-link">pricing</Link>
                     </li>
                     <li>
-                        account
+                    <Link to = {"/login"} className="navbar-link">Account</Link>
                     </li>
                 </ul>
             </div>

@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import Hero from './components/Hero'
 import NavBar from './components/NavBar'
-import BookNow from './components/BookNow'
-import Testimonials from './components/Testimonials'
-import WhyUs from './components/WhyUs'
+import Home from './components/Home'
 import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Classes from './components/Classes'
+import Pricing from './components/Pricing'
+import Login from './components/Login'
 
 function App() {
 
@@ -12,10 +12,12 @@ function App() {
   return (
     <>
      <NavBar />
-     <Hero />
-     <WhyUs />
-     <BookNow />
-     <Testimonials />
+     <Routes>
+        <Route path = "/" element={<Home />}></Route>
+        <Route path = "/classes" element = {<Classes />} />
+        <Route path = "/pricing" element = {<Pricing />}></Route>
+        <Route path = "/login" element = {<Login />}></Route>
+     </Routes>
      <Footer />
     </>
   )
