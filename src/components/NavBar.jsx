@@ -15,7 +15,7 @@ export default function NavBar() {
                     <Link to = {"/pricing"} className="navbar-link">pricing</Link>
                     </li>
                     <li>
-                    <Link to = {"/login"} className="navbar-link">Account</Link>
+                    <Link to = {"/contact"} className="navbar-link">contact</Link>
                     </li>
                 </ul>
             </div>

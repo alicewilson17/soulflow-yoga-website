@@ -348,8 +348,8 @@ width: 100%;
 
   margin: auto;
 }
-.yoga-class-card {
-  background-color: #ddd8d5;
+.yoga-class-card-a, .yoga-class-card-b {
+
  
   max-width: 20rem;
   display: flex;
@@ -357,7 +357,16 @@ width: 100%;
   align-items: center;
 }
 
-.yoga-class-card img {
+.yoga-class-card-a {
+  background-color: #ddd8d5;
+}
+
+.yoga-class-card-b {
+  background-color: #e7ded1;
+}
+
+
+.yoga-class-card-a img, .yoga-class-card-b img {
 
   margin-top: 0;
   padding: 0;
@@ -380,11 +389,193 @@ margin-bottom: 2rem;
 letter-spacing: 0.2rem;
 }
 
+/* pricing page */
 
+.pricing-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 
+}
 
+.pricing-container p {
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
 
+.pricing-container h2 {
+  padding: 2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
 
+.pricecards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.pricecard-a img, .pricecard-b img {
+  max-width: 100%;
+}
+
+.pricecard-a, .pricecard-b {
+  width: 30%;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricecard-a {
+  background-color: #ddd8d5;
+}
+
+.pricecard-b {
+  background-color: #e7ded1;
+}
+
+.pricecard-a h3, .pricecard-b h3 {
+  text-transform: uppercase;
+text-align: center;
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 2rem;
+letter-spacing: 0.2rem;
+}
+
+.pricecard-a h4, .pricecard-b h4 {
+ padding-bottom: 1rem;
+ font-size: larger;
+ background-color: #968981;
+ width: 100%;
+ padding-top: 1rem;
+margin-bottom: 2rem;
+text-align: center;
+color: whitesmoke;
+font-weight: 500;
+letter-spacing: 0.1rem;
+}
+
+.pricecard-a p, .pricecard-b p {
+  padding: 2rem;
+}
+
+.pricing-btn {
+  margin-top: 0.2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: rgb(110, 100, 95);
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.pricing-btn:hover {
+  cursor: pointer;
+  background-color: rgb(129, 120, 116);
+  color: #efefef;
+}
+
+/*contact page */
+
+.contact, .success {
+  background-color: #ddd8d5;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+form {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name-inputs {
+
+width: 100%;
+
+}
+
+.first-name-box, .last-name-box {
+ width: 80%;
+}
+
+.email-box{
+width: 80%;
+}
+
+.message-box {
+  width: 80%;
+  height: 5rem;
+}
+
+.contact p, .success p {
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.contact h2, .success h2 {
+  padding: 2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.submit-btn {
+  margin-top: 0.2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: rgb(110, 100, 95);
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(129, 120, 116);
+  color: #efefef;
+}
+
+form p {
+  color: rgb(228, 1, 1);
+}
 
 
 
