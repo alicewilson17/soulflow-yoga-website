@@ -8,7 +8,7 @@ This project was created using Vite for fast development and build performance.
 
 Currently, this project is a front-end only application, but I plan to incorporate back-end functionality in the future.
 
-View the live demo here: 
+View the live demo here: https://soulflowyoga.netlify.app
 
 ## Features
 
