@@ -20,12 +20,6 @@ View the live demo here:
 - **Pricing Page**: Lists the various class packs and pricing options available.
 - **Contact Page**: Features a contact form where users can send messages directly to the studio.
 
-## Technologies
-- **React**: JavaScript library for building user interfaces.
-- **CSS**: Styling language used for responsive and modern UI design.
-- **Vite**: Next-generation front-end tooling for fast project setup and optimized performance.
-- **API Ninjas Quotes API**: Provides inspirational quotes for the home page.
-
 ## Getting Started
 
 ### Prerequisites
