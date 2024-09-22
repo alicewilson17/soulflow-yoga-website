@@ -6,7 +6,7 @@ export default function BookNow() {
         <div className="booknow">
         <h2>Ready to begin your journey?</h2>
         <QuoteApi />
-        <Link to={"/timetable"}><button className="hero-btn">BOOK A CLASS</button></Link>
+        <Link to={"/pricing"}><button className="hero-btn">BOOK NOW</button></Link>
         </div>
     )
 }

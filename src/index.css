@@ -23,6 +23,10 @@ h1 {
 
 }
 
+button, .navbar-link {
+  transition: 0.3s
+}
+
 .hidden {
   display: none;
 }
@@ -47,7 +51,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   line-height: 1.5rem;
-  padding: 6rem;
+  padding: 4rem;
   gap: 3rem;
 }
 
@@ -76,17 +80,17 @@ h1 {
 
 .hero-btn {
   margin-top: 0.2rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.8rem;
+  
   border: none;
-  letter-spacing: 0.4rem;
-  font-weight: bold;
-  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .hero-btn:hover {
   cursor: pointer;
-  background-color: white;
+ opacity: 70%;
 }
 
 /* navbar */
@@ -204,19 +208,18 @@ align-items: center;
 
 .booknow button {
   margin-top: 0.2rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.8rem;
+ 
   border: none;
-  letter-spacing: 0.4rem;
-  font-weight: bold;
-  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  font-size: 1rem;
   background-color: white;
 }
 
 .booknow button:hover {
   cursor: pointer;
-  background-color: grey;
-  color: white;
+opacity: 70%
 }
 
 .quote {
@@ -473,12 +476,11 @@ letter-spacing: 0.1rem;
 
 .pricing-btn {
   margin-top: 0.2rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.8rem;
   border: none;
   letter-spacing: 0.2rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   background-color: rgb(110, 100, 95);
   color: white;
   text-transform: uppercase;
@@ -493,7 +495,7 @@ letter-spacing: 0.1rem;
 
 /*contact page */
 
-.contact, .success {
+.contact {
   background-color: #ddd8d5;
   width: 40%;
   display: flex;
@@ -502,15 +504,28 @@ letter-spacing: 0.1rem;
   text-align: center;
   margin: auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
-form {
+
+
+.form {
+	display: grid;
+	grid-template: 40px 40px / 1fr 1fr;
+}
+
+.form--button {
+	grid-column: 1 / -1
+}
+
+/* form {
 
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .name-inputs {
 
@@ -529,6 +544,7 @@ width: 80%;
 .message-box {
   width: 80%;
   height: 5rem;
+  
 }
 
 .contact p, .success p {
@@ -547,20 +563,26 @@ width: 80%;
   text-transform: uppercase;
 }
 
-input {
-  padding: 0.5rem;
+input, textarea {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;;
+  box-sizing: border-box;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  resize: vertical;
 }
 
 .submit-btn {
   margin-top: 0.2rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 0.8rem;
   border: none;
   letter-spacing: 0.2rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   background-color: rgb(110, 100, 95);
   color: white;
   text-transform: uppercase;
@@ -577,8 +599,28 @@ form p {
   color: rgb(228, 1, 1);
 }
 
+.success img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 50%;
+}
 
+.success {
+  background-color: #ddd8d5;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 50%;
+  height: 80%;
+}
 
+.success-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 
 
@@ -605,7 +647,7 @@ form p {
     gap: 1rem;
   }
 
-  .hero-container img {
+  .hero-container img, .success img {
     display: none;
   }
 
@@ -642,5 +684,24 @@ form p {
 
   .footer {
     padding: 1rem;
+  }
+
+  .contact {
+    width: 80%;
+  }
+
+  .pricecards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  
+    justify-content: center;
+  
+  
+    margin: auto;
+  }
+
+  .pricecard-a, .pricecard-b {
+    width: 80%;
   }
 }

@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero-container-text-body">
         <h2>welcome to our studio.</h2>
         <p>We offer yoga classes in a range of styles. From fiery vinyasa to soulful yin, there's something to suit everyone.</p>
-        <Link to = {"/timetable"}><button className="hero-btn">BOOK NOW</button></Link>
+        <Link to = {"/classes"}><button className="hero-btn">LEARN MORE</button></Link>
         </div>
         </div>
        

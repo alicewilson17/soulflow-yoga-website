@@ -71,7 +71,7 @@ export default function Contact() {
 
   }
   return (
-    <>
+    <div className="contact-page">
     <div className="contact" style={{display: isFormVisible ? "block" : "none"}}>
       <h2>Got questions?</h2>
       <p>
@@ -108,22 +108,25 @@ export default function Contact() {
           onChange={handleChange}
         ></input>
              <p>{emailError}</p>
-        <input
-          type="text"
+        <textarea
           placeholder="Message"
           className="message-box"
           name="msg"
           value={formData.msg}
           onChange={handleChange}
-        ></input>
+       />
              <p>{msgError}</p>
         <button className="submit-btn">Submit</button>
       </form>
     </div>
     <div className="success" style={{display: isSuccessVisible ? "block" : "none"}}>
-        <h2>Thank you!</h2>
+        <div className="success-content-container">
+        <img src= "./assets/images/thank-you.jpg" alt="hands joined together in a praying position"/>
+        <div className="success-text-container"><h2>Thank you!</h2>
         <p>Your message has been sent successfully. A member of our team will get back to you as soon as possible.</p>
+        </div>
     </div>
-    </>
+    </div>
+    </div>
   );
 }
